@@ -28,4 +28,11 @@ public class BookService {
         return bookDAO.findAllBook();
     }
 
+    /* 설명. 도서 번호로 도서 조회 */
+    public BookDTO searchBookBySequence(int sequence) {
+        return bookDAO.searchBookBySequence(sequence);
+    }
 }
+
+
+

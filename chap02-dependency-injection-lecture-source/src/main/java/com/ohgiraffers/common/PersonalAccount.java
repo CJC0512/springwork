@@ -16,7 +16,7 @@ public class PersonalAccount implements Account{
     @Override
     public String getBalance() {
 
-        return this.accNo + "계좌의 현재 잔액은 " + this.balance + "원 입니다.";
+        return this.accNo + " 계좌의 현재 잔액은 " + this.balance + "원 입니다.";
     }
 
     @Override
@@ -25,7 +25,7 @@ public class PersonalAccount implements Account{
 
         if(money >= 0){
             this.balance += money;
-            str = money + "원이 임금되었습니다.>";
+            str = money + "원이 임금되었습니다.";
         } else{
             str = "금액을 잘못 입력하셨습니다.";
         }
@@ -45,5 +45,14 @@ public class PersonalAccount implements Account{
         }
 
         return str;
+    }
+
+    @Override
+    public String toString() {
+        return "PersonalAccount{" +
+                "bankCode=" + bankCode +
+                ", accNo='" + accNo + '\'' +
+                ", balance=" + balance +
+                '}';
     }
 }

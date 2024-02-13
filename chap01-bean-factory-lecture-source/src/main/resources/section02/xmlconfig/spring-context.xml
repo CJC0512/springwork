@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- MemberDTO bean 등록 index: 말 그대로 인덱스 번호 기준  name: 매개변수 이름 기준-->
+    <bean id="member" class="com.ohgiraffers.common.MemberDTO">
+        <!-- 방법 1 -->
+        <constructor-arg index="0" value="1"/>
+        <constructor-arg name="id" value="user01"/>
+
+        <!-- 방법 2 -->
+        <constructor-arg index="2"><value>pass01</value></constructor-arg>
+        <constructor-arg name="name"><value>홍길동</value></constructor-arg>
+    </bean>
+</beans>

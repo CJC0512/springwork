@@ -1,5 +1,6 @@
 package com.ohgiraffers.section01.javaconfig;
 
+import com.ohgiraffers.common.MemberDTO;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

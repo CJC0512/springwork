@@ -1,4 +1,4 @@
-package com.ohgiraffers.section01.javaconfig;
+package com.ohgiraffers.common;
 
 import lombok.*;
 

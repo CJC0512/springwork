@@ -29,5 +29,6 @@ public class ContextConfiguration {
         /* 설명. 메소드에서 반환한 값을 생성자 주입 */
         return new MemberDTO(1, "홍길동"
                 , "010-1234-5678", "hong123@gmail.com", accountGenerator());
+
     }
 }

@@ -12,11 +12,12 @@ public class PokemonService {
     *   @Qualifier를 통해 원하는 bean 이름(id)으로 하나의 Bean을 주입 받을 수 있다.
     *   (@Primary보다 우선순위가 높다.)
     * */
-    @Autowired
-    @Qualifier("squirtle")
+//    @Autowired
+//    @Qualifier("squirtle")
     private Pokemon pokemon;
 
-    public PokemonService(Pokemon pokemon) {
+    @Autowired
+    public PokemonService(@Qualifier("squirtle") Pokemon pokemon) {
         this.pokemon = pokemon;
     }
 

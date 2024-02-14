@@ -10,7 +10,7 @@ public class PokemonService {
 
     /* 설명. 1. Inject 라이브러리 활용한 필드 추출 */
 //    @Inject
-//    @Named("squirte")
+//    @Named("squirtle")
     private Pokemon pokemon;
 
     /* 설명. 2. 생성자 주입 */

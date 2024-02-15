@@ -19,7 +19,7 @@ public class MemberService {
         return memberDAO.selectAllMembers();
     }
 
-    public MemberDTO findMemberBy(long id) {
-        return memberDAO.selectMemberBy(id);
+    public MemberDTO findMemberBy(int index) {
+        return memberDAO.selectMemberBy(index);
     }
 }

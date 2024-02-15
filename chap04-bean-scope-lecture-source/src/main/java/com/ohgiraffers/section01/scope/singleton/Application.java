@@ -45,7 +45,9 @@ public class Application {
 
         /* 설명. 두 번째 손님이 쇼핑 카트를 꺼내 물건을 담는다. */
         ShoppingCart cart2 = context.getBean("cart", ShoppingCart.class);
-        cart2.addItem(water);
+//        cart2.addItem(water);
+        cart2.addItem(carpBread);
+        cart2.addItem(milk);
 
         /* 설명. 두 번째 손님의 쇼핑 카트에 담긴 물품 확인 */
         System.out.println("cart2에 담긴 물품: " + cart2.getItems());

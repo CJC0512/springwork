@@ -18,10 +18,12 @@ public class MemberDAO {
     }
 
     public List<MemberDTO> selectAllMembers() {
+        System.out.println("target -> findAllMembers 실행");
         return memberList;
     }
 
-    public MemberDTO selectMemberBy(long id) {
-        return memberList.get((int)id);
+    public MemberDTO selectMemberBy(int index) {
+        System.out.println("target -> findMemberBy 실행");
+        return memberList.get(index);
     }
 }
